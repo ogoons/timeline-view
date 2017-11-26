@@ -24,7 +24,7 @@ ListView, RecyclerView 적용 시에는 각 아이템에 padding 이나 margin �
 
 - Line Style
 ```
-- LINE
+- SOLID
 - DASHED
 ```
 
