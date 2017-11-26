@@ -4,9 +4,29 @@ Android Custom Timeline View
 
 ## Summary
 
-일반적인 Line 형태와 Dashed(Dotted) 형태의 2 type을 지원하는 안드로이드 커스텀 뷰 입니다.
+일반적인 실선(Line) 형태와 점선(Dashed) 형태의 2 style을 지원하는 안드로이드 커스텀 뷰 입니다.
 
-자세한 설명은 생략.
+## Features
+
+#### Marker Style
+```
+- XML (Default)
+- Drawable
+```
+
+#### Line Orientation
+```
+- HORIZONTAL
+- VERTICAL
+```
+
+#### Line Style
+```
+- LINE
+- DASHED
+```
+
+자세한 설명은 추후에...
 
 ## Demo
 
