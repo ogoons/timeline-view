@@ -10,7 +10,7 @@ Android Custom Timeline View
 
 ## Demo
 
-![PiklTimelineView Demo](./demo/demo.png){ width=50% }
+![PiklTimelineView Demo](./demo/demo.png)
 
 ## License
 
