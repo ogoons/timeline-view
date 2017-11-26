@@ -39,7 +39,7 @@ ListView, RecyclerView 적용 시에는 각 아이템에 padding 이나 margin �
 ## License
 
 ```
-Copyright 2016 Oh, Su-cheol <ogoons@hanmail.net>
+Copyright 2017 Oh, Su-cheol <ogoons@hanmail.net>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
