@@ -4,7 +4,7 @@ Android Custom Timeline View
 
 ## Summary
 
-일반적인 실선(Line) 형태와 점선(Dashed) 형태의 2 style을 지원하는 안드로이드 커스텀 뷰 입니다.
+일반적인 실선(Solid) 형태와 점선(Dashed) 형태의 2 style을 지원하는 안드로이드 커스텀 뷰 입니다.
 
 ListView, RecyclerView 적용 시에는 각 아이템에 padding 이나 margin 없이 붙여서 뿌려주시면 됩니다.
 
