@@ -16,7 +16,7 @@
             <enum name="vertical" value="1" />
         </attr>
         <attr name="lineStyle" format="enum">
-            <enum name="line" value="0" />
+            <enum name="solid" value="0" />
             <enum name="dashed" value="1" />
         </attr>
         <attr name="lineWidth" format="dimension" />

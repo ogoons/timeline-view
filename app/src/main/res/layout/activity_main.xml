@@ -21,7 +21,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
-                app:lineStyle="line"
+                app:lineStyle="solid"
                 app:lineType="begin"
                 app:marker="@android:drawable/ic_media_play" />
 
@@ -29,14 +29,14 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
-                app:lineStyle="line"
+                app:lineStyle="solid"
                 app:lineType="middle" />
 
             <com.ogoons.pikltimelineview.PiklTimelineView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
-                app:lineStyle="line"
+                app:lineStyle="solid"
                 app:lineType="end" />
 
         </LinearLayout>
@@ -84,7 +84,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
-                    app:lineStyle="line"
+                    app:lineStyle="solid"
                     app:lineType="begin"
                     app:marker="@android:drawable/ic_media_play" />
 
@@ -92,14 +92,14 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
-                    app:lineStyle="line"
+                    app:lineStyle="solid"
                     app:lineType="middle" />
 
                 <com.ogoons.pikltimelineview.PiklTimelineView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
-                    app:lineStyle="line"
+                    app:lineStyle="solid"
                     app:lineType="end" />
 
             </LinearLayout>

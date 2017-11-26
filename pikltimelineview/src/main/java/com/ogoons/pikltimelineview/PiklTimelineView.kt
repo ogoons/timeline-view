@@ -41,21 +41,21 @@ class PiklTimelineView(context: Context, attrs: AttributeSet) : View(context, at
     private val DEF_DASH_WIDTH_DP = 4
     private val DEF_DASH_GAP_DP = 4
 
+    enum class LineType {
+        BEGIN,
+        MIDDLE,
+        END,
+        ONLY
+    }
+
     enum class LineOrientation {
         HORIZONTAL,
         VERTICAL
     }
 
     enum class LineStyle {
-        LINE,
+        SOLID,
         DASHED,
-    }
-
-    enum class LineType {
-        BEGIN,
-        MIDDLE,
-        END,
-        ONLY
     }
 
     init {
@@ -75,7 +75,7 @@ class PiklTimelineView(context: Context, attrs: AttributeSet) : View(context, at
             else -> LineType.ONLY
         }
         lineOrientation = if (typedArray.getInt(R.styleable.PiklTimelineView_lineOrientation, DEF_LINE_ORIENTATION) == 0) LineOrientation.HORIZONTAL else LineOrientation.VERTICAL
-        lineStyle = if (typedArray.getInt(R.styleable.PiklTimelineView_lineStyle, DEF_LINE_STYLE) == 0) LineStyle.LINE else LineStyle.DASHED
+        lineStyle = if (typedArray.getInt(R.styleable.PiklTimelineView_lineStyle, DEF_LINE_STYLE) == 0) LineStyle.SOLID else LineStyle.DASHED
         lineWidth = typedArray.getDimensionPixelSize(R.styleable.PiklTimelineView_lineWidth, Util.dpToPx(context, DEF_LINE_HEIGHT_DP))
         lineColor = typedArray.getColor(R.styleable.PiklTimelineView_lineColor, ContextCompat.getColor(context, android.R.color.darker_gray))
         dashWidth = typedArray.getDimensionPixelSize(R.styleable.PiklTimelineView_dashWidth, Util.dpToPx(context, DEF_DASH_WIDTH_DP))
@@ -162,7 +162,7 @@ class PiklTimelineView(context: Context, attrs: AttributeSet) : View(context, at
                 val markerCenterY = markerBounds.exactCenterY()
                 val lineTop = markerCenterY - (lineWidth shr 1)
                 when (lineStyle) {
-                    LineStyle.LINE -> {
+                    LineStyle.SOLID -> {
                         /**
                          * Draw rectangle
                          */
@@ -214,7 +214,7 @@ class PiklTimelineView(context: Context, attrs: AttributeSet) : View(context, at
                 val markerCenterX = markerBounds.exactCenterX()
                 val lineLeft = markerCenterX - (lineWidth shr 1)
                 when (lineStyle) {
-                    LineStyle.LINE -> {
+                    LineStyle.SOLID -> {
                         /**
                          * Draw rectangle
                          */
