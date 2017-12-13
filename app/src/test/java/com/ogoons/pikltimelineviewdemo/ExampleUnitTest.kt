@@ -1,4 +1,4 @@
-package com.ogoons.pikltimelineviewsample
+package com.ogoons.pikltimelineviewdemo
 
 import org.junit.Test
 

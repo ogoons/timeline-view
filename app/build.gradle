@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.ogoons.pikltimelineviewsample"
+        applicationId 'com.ogoons.pikltimelineviewdemo'
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
@@ -19,6 +19,8 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 

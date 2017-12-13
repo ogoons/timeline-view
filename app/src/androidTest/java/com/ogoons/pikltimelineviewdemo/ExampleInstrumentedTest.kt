@@ -1,4 +1,4 @@
-package com.ogoons.pikltimelineviewsample
+package com.ogoons.pikltimelineviewdemo
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
