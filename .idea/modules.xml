@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pikl-timeline-view-demo.iml" filepath="$PROJECT_DIR$/pikl-timeline-view-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pikltimelineview/pikltimelineview.iml" filepath="$PROJECT_DIR$/pikltimelineview/pikltimelineview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hago-timeline-view.iml" filepath="$PROJECT_DIR$/hago-timeline-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hagotimelineview/hagotimelineview.iml" filepath="$PROJECT_DIR$/hagotimelineview/hagotimelineview.iml" />
     </modules>
   </component>
 </project>
