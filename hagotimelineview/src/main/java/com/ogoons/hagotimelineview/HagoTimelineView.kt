@@ -19,9 +19,9 @@ class HagoTimelineView(context: Context, attrs: AttributeSet) : View(context, at
     private var markerInCenter: Boolean = false
     private lateinit var markerBounds: Rect
 
-    private lateinit var lineType: LineType
-    private lateinit var lineOrientation: LineOrientation
-    private lateinit var lineStyle: LineStyle
+    private var lineType: LineType
+    private var lineOrientation: LineOrientation
+    private var lineStyle: LineStyle
     private var lineWidth: Int = 0
     private var lineColor: Int = 0
 
@@ -61,10 +61,6 @@ class HagoTimelineView(context: Context, attrs: AttributeSet) : View(context, at
     }
 
     init {
-        init(attrs)
-    }
-
-    private fun init(attrs: AttributeSet) {
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.HagoTimelineView)
         marker = typedArray.getDrawable(R.styleable.HagoTimelineView_marker)
         markerSize = typedArray.getDimensionPixelSize(R.styleable.HagoTimelineView_markerSize, Util.dpToPx(context, DEF_MARKER_SIZE_DP))
