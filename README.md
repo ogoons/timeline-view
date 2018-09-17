@@ -1,4 +1,4 @@
-# OdyTimelineView
+# OgTimelineView
 
 Android Custom Timeline View
 

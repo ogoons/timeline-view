@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ody-timeline-view.iml" filepath="$PROJECT_DIR$/ody-timeline-view.iml" />
-      <module fileurl="file://$PROJECT_DIR$/odytimelineview/odytimelineview.iml" filepath="$PROJECT_DIR$/odytimelineview/odytimelineview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/og-timeline-view.iml" filepath="$PROJECT_DIR$/og-timeline-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ogtimelineview/ogtimelineview.iml" filepath="$PROJECT_DIR$/ogtimelineview/ogtimelineview.iml" />
     </modules>
   </component>
 </project>
