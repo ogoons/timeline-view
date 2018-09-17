@@ -1,1 +1,1 @@
-include ':app', ':ogtimelineview'
+include ':app', ':timelineview'

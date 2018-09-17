@@ -1,4 +1,4 @@
-# OgTimelineView
+# TimelineView
 
 Android Custom Timeline View
 
