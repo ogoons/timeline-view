@@ -1,4 +1,4 @@
-# HagoTimelineView
+# OdyTimelineView
 
 Android Custom Timeline View
 

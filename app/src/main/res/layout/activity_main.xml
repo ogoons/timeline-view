@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ogoons.hagotimelineviewdemo.MainActivity">
+    tools:context="com.ogoons.odytimelineviewdemo.com.ogoons.odytimelineviewdemo.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.ogoons.hagotimelineview.HagoTimelineView
+            <com.ogoons.odytimelineview.OdyTimelineView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
@@ -25,14 +25,14 @@
                 app:lineType="begin"
                 app:marker="@android:drawable/ic_media_play" />
 
-            <com.ogoons.hagotimelineview.HagoTimelineView
+            <com.ogoons.odytimelineview.OdyTimelineView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
                 app:lineStyle="solid"
                 app:lineType="middle" />
 
-            <com.ogoons.hagotimelineview.HagoTimelineView
+            <com.ogoons.odytimelineview.OdyTimelineView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.ogoons.hagotimelineview.HagoTimelineView
+            <com.ogoons.odytimelineview.OdyTimelineView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
@@ -54,14 +54,14 @@
                 app:lineType="begin"
                 app:marker="@android:drawable/ic_media_play" />
 
-            <com.ogoons.hagotimelineview.HagoTimelineView
+            <com.ogoons.odytimelineview.OdyTimelineView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
                 app:lineStyle="dashed"
                 app:lineType="middle" />
 
-            <com.ogoons.hagotimelineview.HagoTimelineView
+            <com.ogoons.odytimelineview.OdyTimelineView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:lineOrientation="horizontal"
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.ogoons.hagotimelineview.HagoTimelineView
+                <com.ogoons.odytimelineview.OdyTimelineView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
@@ -88,14 +88,14 @@
                     app:lineType="begin"
                     app:marker="@android:drawable/ic_media_play" />
 
-                <com.ogoons.hagotimelineview.HagoTimelineView
+                <com.ogoons.odytimelineview.OdyTimelineView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
                     app:lineStyle="solid"
                     app:lineType="middle" />
 
-                <com.ogoons.hagotimelineview.HagoTimelineView
+                <com.ogoons.odytimelineview.OdyTimelineView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.ogoons.hagotimelineview.HagoTimelineView
+                <com.ogoons.odytimelineview.OdyTimelineView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
@@ -117,14 +117,14 @@
                     app:lineType="begin"
                     app:marker="@android:drawable/ic_media_play" />
 
-                <com.ogoons.hagotimelineview.HagoTimelineView
+                <com.ogoons.odytimelineview.OdyTimelineView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
                     app:lineStyle="dashed"
                     app:lineType="middle" />
 
-                <com.ogoons.hagotimelineview.HagoTimelineView
+                <com.ogoons.odytimelineview.OdyTimelineView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     app:lineOrientation="vertical"
