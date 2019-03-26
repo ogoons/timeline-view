@@ -3,6 +3,7 @@ package com.ogoons.timelineview
 import android.content.Context
 import android.graphics.*
 import android.graphics.drawable.Drawable
+import android.graphics.drawable.TransitionDrawable
 import android.os.Build
 import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
@@ -31,15 +32,15 @@ class TimelineView(context: Context, attrs: AttributeSet) : View(context, attrs)
 
     companion object {
         // Default
-        private const val DEF_MARKER_SIZE_DP = 20
-        private const val DEF_MARKER_MARGIN_DP = 4
-        private const val DEF_LINE_HEIGHT_DP = 2
-        private const val DEF_LINE_TYPE = 3 // ONLY
-        private const val DEF_LINE_ORIENTATION = 0 // Horizontal
-        private const val DEF_LINE_STYLE = 0 // Line
+        private const val DEFAULT_MARKER_SIZE_DP = 20
+        private const val DEFAULT_MARKER_MARGIN_DP = 4
+        private const val DEFAULT_LINE_HEIGHT_DP = 2
+        private const val DEFAULT_LINE_TYPE = 3 // ONLY
+        private const val DEFAULT_LINE_ORIENTATION = 0 // Horizontal
+        private const val DEFAULT_LINE_STYLE = 0 // Line
 
-        private const val DEF_DASH_WIDTH_DP = 4
-        private const val DEF_DASH_GAP_DP = 4
+        private const val DEFAULT_DASH_WIDTH_DP = 4
+        private const val DEFAULT_DASH_GAP_DP = 4
     }
 
     enum class LineType {
@@ -62,21 +63,21 @@ class TimelineView(context: Context, attrs: AttributeSet) : View(context, attrs)
     init {
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.TimelineView)
         marker = typedArray.getDrawable(R.styleable.TimelineView_marker)
-        markerSize = typedArray.getDimensionPixelSize(R.styleable.TimelineView_markerSize, Util.dpToPx(context, DEF_MARKER_SIZE_DP))
-        markerMargin = typedArray.getDimensionPixelSize(R.styleable.TimelineView_markerMargin, Util.dpToPx(context, DEF_MARKER_MARGIN_DP))
-        lineType = when (typedArray.getInt(R.styleable.TimelineView_lineType, DEF_LINE_TYPE)) {
+        markerSize = typedArray.getDimensionPixelSize(R.styleable.TimelineView_markerSize, Util.dpToPx(context, DEFAULT_MARKER_SIZE_DP))
+        markerMargin = typedArray.getDimensionPixelSize(R.styleable.TimelineView_markerMargin, Util.dpToPx(context, DEFAULT_MARKER_MARGIN_DP))
+        lineType = when (typedArray.getInt(R.styleable.TimelineView_lineType, DEFAULT_LINE_TYPE)) {
             0 -> LineType.BEGIN
             1 -> LineType.MIDDLE
             2 -> LineType.END
             3 -> LineType.ONLY
             else -> LineType.ONLY
         }
-        lineOrientation = if (typedArray.getInt(R.styleable.TimelineView_lineOrientation, DEF_LINE_ORIENTATION) == 0) LineOrientation.HORIZONTAL else LineOrientation.VERTICAL
-        lineStyle = if (typedArray.getInt(R.styleable.TimelineView_lineStyle, DEF_LINE_STYLE) == 0) LineStyle.SOLID else LineStyle.DASHED
-        lineWidth = typedArray.getDimensionPixelSize(R.styleable.TimelineView_lineWidth, Util.dpToPx(context, DEF_LINE_HEIGHT_DP))
+        lineOrientation = if (typedArray.getInt(R.styleable.TimelineView_lineOrientation, DEFAULT_LINE_ORIENTATION) == 0) LineOrientation.HORIZONTAL else LineOrientation.VERTICAL
+        lineStyle = if (typedArray.getInt(R.styleable.TimelineView_lineStyle, DEFAULT_LINE_STYLE) == 0) LineStyle.SOLID else LineStyle.DASHED
+        lineWidth = typedArray.getDimensionPixelSize(R.styleable.TimelineView_lineWidth, Util.dpToPx(context, DEFAULT_LINE_HEIGHT_DP))
         lineColor = typedArray.getColor(R.styleable.TimelineView_lineColor, ContextCompat.getColor(context, android.R.color.darker_gray))
-        dashWidth = typedArray.getDimensionPixelSize(R.styleable.TimelineView_dashWidth, Util.dpToPx(context, DEF_DASH_WIDTH_DP))
-        dashGap = typedArray.getDimensionPixelSize(R.styleable.TimelineView_dashGap, Util.dpToPx(context, DEF_DASH_GAP_DP))
+        dashWidth = typedArray.getDimensionPixelSize(R.styleable.TimelineView_dashWidth, Util.dpToPx(context, DEFAULT_DASH_WIDTH_DP))
+        dashGap = typedArray.getDimensionPixelSize(R.styleable.TimelineView_dashGap, Util.dpToPx(context, DEFAULT_DASH_GAP_DP))
         markerInCenter = typedArray.getBoolean(R.styleable.TimelineView_markerInCenter, true)
         typedArray.recycle()
 
