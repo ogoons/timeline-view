@@ -3,7 +3,6 @@ package com.ogoons.timelineview
 import android.content.Context
 import android.graphics.*
 import android.graphics.drawable.Drawable
-import android.graphics.drawable.TransitionDrawable
 import android.os.Build
 import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
@@ -264,6 +263,11 @@ class TimelineView(context: Context, attrs: AttributeSet) : View(context, attrs)
         drawMarker(canvas)
         drawLine(canvas)
     }
+
+    /**
+     * Get the marker.
+     */
+    fun getMarker() = this.marker
 
     /**
      * Set the marker.
